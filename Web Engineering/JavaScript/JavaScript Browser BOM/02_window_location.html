@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <input type="button" value="Load new document" onclick="newDoc()">
+
+	<p id="demo"></p>
+	<p id="demo1"></p>
+
+	<script>
+
+		function newDoc() 
+		{
+			window.location.assign("https://www.google.com");
+		}
+
+		document.getElementById("demo").innerHTML=
+		"The full URL of this page is:<br>" + window.location.href;
+		document.getElementById("demo1").innerHTML=
+		"Page hostname is: " + window.location.hostname;
+
+/*
+1 - window.location.href returns the href (URL) of the current page
+2 - window.location.hostname returns the domain name of the web host
+3 - window.location.pathname returns the path and filename of the current page
+4 - window.location.protocol returns the web protocol used (http: or https:)
+5 - window.location.assign loads a new document
+6 - window.location.port property returns the number of the internet host port (of the current page)
+*/
+</script>
+
+</body>
+</html> 

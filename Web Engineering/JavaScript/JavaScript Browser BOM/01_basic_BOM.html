@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<button type="button" onclick="fun()">
+	Press Here to Close Window tag
+    </button>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+	<script>
+
+		document.getElementById("demo").innerHTML="Screen width is " + screen.width;
+		document.getElementById("demo1").innerHTML="Screen height is " + screen.height;
+		document.getElementById("demo2").innerHTML="Available screen width is " + screen.availWidth;
+		document.getElementById("demo").innerHTML="Available screen height is " + screen.availHeight;
+		/*
+		screen.colorDepth - property returns the number of bits used to display one color.
+		screen.pixelDepth - property returns the pixel depth of the screen.
+		*/
+
+		function fun() 
+		{
+			window.close();
+		}
+
+		/*
+		window.open() - open a new window
+		window.close() - close the current window
+		window.moveTo() -move the current window
+		window.resizeTo() -resize the current window
+		*/
+
+	</script>
+
+</body>
+</html> 
